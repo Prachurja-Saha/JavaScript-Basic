@@ -1,0 +1,199 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 200vh;
+    margin: 0px;
+
+    padding-top: 70px;
+    /* Adjust to the height of the fixed navbar, including padding and border */
+}
+
+.Top-nav-bar {
+    /* With position fixed u need to mention the width/length */
+    position: fixed;
+    width: 100%;
+
+    background-color: antiquewhite;
+    border: 1px solid red;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: larger;
+    margin: 0px;
+
+    /* z-index is the CSS property that controls the stacking order of overlapping elements
+     on a page. An element with a higher z-index value will appear in front of an element with
+      a lower z-index value. 
+    The property is called “z-index” because it sets the order of elements along the z-axis. */
+    z-index: 10;
+    /* Ensure it appears on top */
+
+    top: 0;
+    /* Make sure it's fixed at the top */
+}
+
+.Top-nav-bar a {
+    padding: 10px;
+    margin: 0px;
+    border: 1px solid red;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.Bar-right {
+    font-size: large;
+    position: absolute;
+    top: 25%;
+    left: 50%
+}
+
+.Top-nav-bar-1 {
+    /* Parent should also be flex */
+    display: flex;
+
+    color: white;
+
+    border: 1px solid red;
+    margin-top: 70px;
+    /* This will push the second navbar down below the fixed one */
+
+    background-color: rgb(0, 52, 14);
+    border-radius: 10px;
+
+    z-index: 10;
+    /* Ensure it appears on top */
+}
+
+.Bar-right-1 {
+    flex-grow: 1;
+    /* Take up remaining space, pushing .Bar-right-1 to the right */
+
+    /* Display flex should be at parent level */
+    display: flex;
+    justify-content: flex-end;
+    /* this is within the Bar-right-1*/
+
+    margin: 3px;
+    border: 1px solid white;
+    font-size: 1em;
+    border-radius: 10px;
+
+}
+
+.Bar-right-1 a {
+    margin: 10px;
+    border: 1px solid white;
+    font-size: 1.5em;
+    text-decoration: none;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+}
+
+.Bar-left-1 {
+    display: flex;
+    margin: 3px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.Bar-left-1 h1 {
+    margin: 0px;
+    padding: 10px;
+}
+
+/* .Structure{
+    display: flex; 
+} */
+
+.Images {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+
+    height: auto;
+
+    border: 1px solid red;
+    /* justify-content: flex-end; */
+    border-radius: 10px;
+    /* Optional: to round corners */
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.2);
+
+    /* justify-content: space-around; */
+    /* justify-content: flex-end; */
+    flex-direction: row-reverse;
+    
+
+    /* Remove extra space  */
+    /* align-content: flex-start; */
+
+}
+
+.image-container {
+
+    margin: 10px;
+    border: 1px solid black;
+
+    /* Full width */
+    /* width: 20%;  */
+
+    /* Height of the div */
+    height: 400px; 
+     /* Let the height adjust */
+     /* height: auto; */
+
+    background-image: url('profile-pic.jpg');
+    /* Replace with your image path */
+    background-size: cover;
+    /* Makes the image cover the entire div */
+    background-position: center;
+    border-radius: 10px;
+    /* Optional: to round corners */
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.2);
+
+     /* Allow to grow vertically and horizontally */
+     /* flex: 2 1 auto; */
+
+     flex: 1;
+
+}
+
+.block-container{
+
+    border: 1px solid red;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 3
+}
+
+.B {
+
+    /* justify-content: space-between; */
+    width: 10em;
+    border: 1px solid red;
+    height: 10em;
+    margin: 10px;
+    text-align: center;
+
+    /* if u dont mention than box will not shrink-> b/c then it no need to maintain ratio */
+    /* flex: 1; */
+}
+
+#a1 {
+
+    /* flex: 2; */
+    text-align: center;
+    justify-content: space-around;
+    background-color: aqua;
+
+    /* Order */
+}
+
+#a2 {
+
+    /* flex: 3; */
+    text-align: center;
+    justify-content: space-around;
+    background-color: rgb(102, 98, 179);
+
+    /* Order */
+}

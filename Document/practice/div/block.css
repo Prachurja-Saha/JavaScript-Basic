@@ -1,0 +1,58 @@
+body{
+    color: white;
+    background-color: black;
+    font-family: fantasy;
+    border: 1px solid rgb(55, 0, 255);
+    padding: 12px;
+}
+
+.A{
+    height: 500px;
+    border: 1px solid red;
+    padding: 10px;
+}
+
+.a1{
+    border: 1px solid red;
+    padding: 10px;
+}
+
+.a2{
+    box-sizing: border-box;
+    border: 1px solid red;
+    padding: 10px;
+    margin-top: 10px;
+    width: 46%;
+}
+
+.a3 {
+    /* VERY IMP */
+    /* Relative to current position, I can move top left and button relative to current position.
+     1. In relative if i move position than older position will be empty. i.e if i move a3 using
+     relative than older position of a3 will not filled by a4 or a2 thats why absolute is there
+     2. Absolute position -> If i move a3 position with absolute other position will think that
+      a3 position is deleted so a4 will fill the position of a3 and in absolute if i want
+      restriction i.e i want a3 block should be inside A than in A i have to write position
+      Relative */
+    position: absolute; 
+    top : 16.5%;
+    left : 48.3%;
+    border: 1px solid red;
+    padding: 10px;
+    margin-top: 10px;
+    width: 46%;
+}
+
+.a4 {
+
+    border: 1px solid red;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+/* 
+
+Sticky -> Relative + Fixed 
+using relative we can move the position + and that position will be fixed when we scroll
+
+*/

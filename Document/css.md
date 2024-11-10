@@ -31,9 +31,20 @@ Here’s a list of commonly used and useful CSS properties that are essential fo
 
 4. **Layout**
    - `display`: Specifies how an element is displayed (e.g., block, inline, flex).
+      block -> will take entire width (we can customize block using width and height) i.e div, p, header, footer etc
+      inline -> will take only specefic text (we can not customize block using width and height) space. e.g. span 
+      inline-block->
+      
+      what display does -> changing the character i.e if it is block we can change to inline, viceversa
+
    - `flex`: Used in flexbox layouts for flexible box layouts.
-   - `grid`: Defines grid-based layouts.
+           make block horizonatal
+
+
+   - `grid`: Defines grid-based layouts. ***
    - `position`: Controls the positioning of elements (static, relative, absolute, fixed).
+      absolute -> will remove that block from parent block 
+
    - `float`: Allows elements to be placed side by side.
 
 5. **Dimensions**
