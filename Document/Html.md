@@ -25,9 +25,11 @@ Text and Content Tags
 <a>: Anchor tag for hyperlinks.
 <button>: Clickable button, often used for forms or navigation.
 <img>: Embeds images.
+<i>: Icon
 
 Forms and Inputs
 <form>: Wraps form controls.
+
 <input>: Collects user data; can specify types like "text", "email", "password", etc.
 <textarea>: Multi-line text input.
 <label>: Labels for form inputs.
@@ -38,6 +40,12 @@ Lists
 <ul>: Unordered (bulleted) list.
 <ol>: Ordered (numbered) list.
 <li>: List item, used inside <ul> or <ol>.
+<ul> 
+    <li>Item 1</li> 
+    <li>Item 2</li> 
+    <li>Item 3</li> 
+</ul>
+
 
 Styling and Scripting
 <style>: Embeds CSS directly in the document, not usually recommended for larger projects.

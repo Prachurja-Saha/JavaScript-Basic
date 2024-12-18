@@ -1,0 +1,40 @@
+*{
+    /* border: 1px solid rgb(158, 7, 7);  */
+}
+
+body{
+    /* background-color: blue; */
+    /* height cannot be 100 because height is infinite */
+    height: 550px; 
+    /* border: 1px solid rgb(158, 7, 7); */
+    /* align-items: center; */
+    /* justify-content: center; */
+    align-content: center;
+
+}
+
+.find{
+    /* height: 100px;  */
+    margin: 10px;
+    /* border: 1px solid rgb(158, 7, 7); */
+    /* align-items: center; */
+    justify-content: center;
+    align-content: center;
+}
+
+#search{
+    margin-left: 400px;
+    padding: 10px;
+    /* margin-right: 53px; */
+    border-radius: 30px;
+    width: 30%;
+    border: 1px solid black;
+    /* background-color: brown; */
+}
+
+#search-button{
+    border-radius: 30px;
+    padding: 8px;
+    color: white;
+    background-color: rgb(76, 70, 70);
+}
