@@ -7,6 +7,20 @@
 
         <title> dom test </title>
         <link rel="stylesheet" href="styles.css">
+
+        <!-- Very Important -->
+        <!-- We can provide .js file path here also, async properties, means it will first 
+         download and execute all the code written in .js file and then execute HTML files 
+         by default script tag will take `async` properties if we dont mention properties-->
+        <!-- <script src="dom.js"></script> is equivalent <script async src="dom.js"></script>
+           becuase by default it is async, if i want Html body code first execute and 
+           then after .js file code then i have to use `defer` properties 
+           <script defer src="dom.js"></script>-->
+           <!-- Some time we need to understand when to use defer or async -->
+           <!-- if i used async and then when i execute getElementById("id") in .js 
+            it will give error b/c that time html is not loaded so js will throw error
+            b/c for js there is no id -->
+
     </head>
     <body>
         <h1 class = "head"> Hi... </h1>
@@ -14,8 +28,31 @@
             <input type="text" id = "search" placeholder="search here">
             <button id = "search-button"> search</button>
             <p id = "final-name"> Name...  </p>
-            <!-- Link to your JavaScript file --> 
-             <script src="dom.js"></script>
+            <button id = test>Test Remove Event Listener</button>
+
+            <div id="event-handler" onclick="eventHandlerTest()"> click here to check </div>
+            
+            <!-- mainly used to collect data, here method is api metod post -->
+            <!-- sumbit every inputs together (here action contains url) -->
+            <form action="/submit_form" method="post">
+                
+                <!-- Here label is with input(here for and id is same so when u select for) 
+                 cursor will enable, Here action and methods are properties
+                 auto validation applied here
+                 when ever we click submit page will reload-->
+                <label for="name">Name:</label> 
+                <input type="text" id="name" name="name">
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <br>
+                <!-- usually we use submit button in forms -->
+                <button type="submit">Submit</button>
+            </form>
+            
+
+                <!-- Link to your JavaScript file should always at the end of tag,  --> 
+                <script defer src="dom.js"></script>
         </div>
     </body>
 </html>

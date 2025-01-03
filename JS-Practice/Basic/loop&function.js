@@ -2,7 +2,7 @@
 let a = [["1","2"],["3","4"]];   console.log(a);
 
 let list1 = [1,2,3]; let list2 = [4,5,6];
-let newList = [...list1, ...list2]; // ... -> spread [1,2,3,4,5,6]
+let newList = [...list1, ...list2]; // ... -> spread operator [1,2,3,4,5,6]
 console.log(newList);
 
 let fruits = ["apple", "banana", "orange"]
@@ -22,12 +22,12 @@ for(let i of fruits) {
 }
 // fruits.forEach
 console.log("using for each/ annonymous function")
-fruits.forEach(function(i){ // Annonymous function just like java
-    console.log(i)
+fruits.forEach(function(fruit){ // Annonymous function just like java
+    console.log(fruit)
 })
 //alternative
-fruits.forEach(i=> console.log(i));
-fruits.forEach((e,i) => console.log("element " + e  +" -- index"+ i));
+fruits.forEach(fruit=> console.log(fruit));
+fruits.forEach((e,i) => console.log("element " + e  +" -- index "+ i));
 
 
 // ----- function -----------

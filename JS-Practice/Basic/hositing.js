@@ -22,7 +22,7 @@ function sayHello(){
 // sayHello();
 
 // 2.b with function expression(another way of creating function) hoisting will not work
-sayHi();  // throw error sayHello is not function
+sayHi();  // throw error sayHi is not function at the time of hoisting
 var sayHi = function(){ // using function expression
    console.log("hi")
 }; // why error in this case what will happen after compilation ->

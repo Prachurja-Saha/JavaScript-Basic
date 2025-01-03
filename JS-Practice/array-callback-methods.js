@@ -51,7 +51,7 @@ console.log("if one or more condition matched than return : " + newList.some(i=>
 
 // sort() 
 console.log(newList.sort()); // by default sort method performs string comparision result
-// unexpected sorting outcomes
+// unexpected sorting outcomes for numbers sorting
 // if i want to compare numerically than we have to provide custom comparision function
 console.log("ascending : " + newList.sort((a,b)=> a-b));
 console.log("desending : " + newList.sort((a,b)=> b-a));

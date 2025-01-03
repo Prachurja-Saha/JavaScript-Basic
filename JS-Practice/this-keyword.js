@@ -2,6 +2,8 @@ function sayHello(){
     console.log("Hiii "+ this.name);
 }
 
+//  Pls understand scope very well
+
 const person = {
     name : "Amit",
     greet : sayHello,

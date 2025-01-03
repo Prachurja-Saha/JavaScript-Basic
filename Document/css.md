@@ -5,6 +5,17 @@ Layer -> Margin-border-padding-text/font-size
 Margin -> distnace between parent div/body to current div
 padding ->
 
+# Units (2 major units 1. Absolute 2. Relative)
+`Absolute` units are fixed and do not change based on other elements. Common absolute
+px(Single dot on screen), in(1 inch = 96 px), cm(1 centimeter = 37.8px), mm(1 millimeter=3.78px),
+pt(1 points= 1.33px),pc(1 picas = 12 points)
+
+`Relative` Relative units are based on the size of other elements or the viewport. Common relative : 
+- em :Relative to the font-size of the element. For example, 2em means 2 times the current font size
+- rem(root em): Relative to the font-size of the root element (<html>). For example, 2rem means 2 times the root font size.
+- % (percentage): Relative to the parent element’s size. For example, 50% of the parent element’s width.
+
+
 
 
 Here’s a list of commonly used and useful CSS properties that are essential for building web applications:
@@ -24,7 +35,8 @@ Here’s a list of commonly used and useful CSS properties that are essential fo
    - `text-align`: Aligns text (left, right, center, justify).
    - `justify-content: center` 
    - `align-items: center`
-   - `align-content: center;`
+   - `align-content: center;` : Vertically
+   - `place-items: center;` /* Center both horizontally and vertically */
 
 3. **Box Model**
    - `margin`: Sets the outer space around elements.
@@ -33,21 +45,22 @@ Here’s a list of commonly used and useful CSS properties that are essential fo
    - `box-sizing`: Defines how the total width and height of elements are calculated (e.g., `border-box`).
 
 4. **Layout**
-   - `display`: Specifies how an element is displayed (e.g., block, inline, flex).
+   - `display`: Specifies how an element is displayed (e.g., block, inline, flex, grid).
       block -> will take entire width (we can customize block using width and height) i.e div, p, header, footer etc
       inline -> will take only specefic text (we can not customize block using width and height) space. e.g. span 
       inline-block->
       
       what display does -> changing the character i.e if it is block we can change to inline, viceversa
 
-   - `flex`: Used in flexbox layouts for flexible box layouts.
+     `flex`: Used in flexbox layouts for flexible box layouts.
            make block horizonatal , flex-wrap -> responsive, flex=1,2-> ratio it will take entire parent block
 
+     `grid`: Defines grid-based layouts. *** grid-template-columns: 3fr 1fr;
+         /* ratio -> 1:1 for column-> 2 column */ grid-template-columns: 1fr 1fr;   
+         grid-row: auto;
 
-   - `grid`: Defines grid-based layouts. ***
-
-
-
+ 
+      Mostly used for Images
    - `position`: Controls the positioning of elements (static, relative, absolute, fixed).
       static -> default
       fixed -> fixed in one position -> need to provide width -> 100% 

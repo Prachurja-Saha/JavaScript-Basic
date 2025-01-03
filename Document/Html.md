@@ -15,7 +15,7 @@ Layout and Structure Tags
 <main>: Primary content area.
 <section>: Groups related content in a section.
 <article>: Self-contained content (e.g., blog posts).
-<footer>: Defines the footer section, typically for copyright, links, etc.
+<footer>: Defines the footer section, typically for copyright, links, etc.(shows at down)
 <div>: Generic container for grouping content, useful for layout with CSS.
 
 Text and Content Tags
@@ -28,7 +28,8 @@ Text and Content Tags
 <i>: Icon
 
 Forms and Inputs
-<form>: Wraps form controls.
+Very important
+<form>: Wraps form controls. Forms are a standardized way to collect user data and send it to a server for processing.
 
 <input>: Collects user data; can specify types like "text", "email", "password", etc.
 <textarea>: Multi-line text input.

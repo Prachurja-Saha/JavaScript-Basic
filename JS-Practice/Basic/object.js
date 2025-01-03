@@ -9,10 +9,17 @@ var person = {
 //    return "Hi I am John";
 //  }
 
-intro : () => "Hi I am " + this.name
-  
-}
+intro : () => "Hi I am " + this.name,
+get getUpperCaseName(){
+    return this.name.toUpperCase();
+}  ,
 
+// set setPersonName(name){
+//    this.name = an.toUpperCase();
+// }
+}
+// person.setPersonName("rohit"); error is coming will check later
+console.log(person.getUpperCaseName)
 console.log(person);
 console.log(person.name);
 console.log(person.intro);
@@ -39,3 +46,24 @@ console.log("It should be true b/c refernce pointing same address " + (obj3==obj
 
 var s1 = "XYZ"; var s2 = "XYZ";
 console.log("checking value b/c primitive type " + (s1==s2))
+
+
+// Alternative way of creating object using new keyword
+let user = new Object();
+user.name = "Akash";
+user.age = 12;
+
+console.log(user);
+
+// Using constructor
+
+function Employee(id, roll){
+   this.roll = roll;
+   this.id = id;
+ }
+
+ let emp1 = new Employee(1,10);
+ let emp2 = new Employee(2,11);
+ console.log(emp1.id +"----" + emp1.roll)
+ emp1.bonus = 100;
+ console.log("emp1 bonus:  "+emp1.bonus + " ---- emp2 id:"+ emp2.id)
